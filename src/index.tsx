@@ -93,20 +93,22 @@ const CarparkOccupancyWidget: React.FunctionComponent<IWidgetProps> = (props) =>
     }
     function renderPie() {
         return <ResponsiveContainer width="100%" height="100%">
-            <PieChart
-
+           <PieChart 
 
             >
 
                 <Legend verticalAlign="top" height={36} />
-                <Pie
-
+                <Pie 
                     data={data}
                     label={true}
-                    //   cx={'50%'}
-                    //   cy={'50%'}
-                    innerRadius={100}
-                    outerRadius={150}
+                      cx={'50%'}
+                      cy={'50%'}
+                    // innerRadius={100}
+                    // outerRadius={150}
+
+                    innerRadius="80%"
+                    outerRadius="95%"
+                    
                     fill="#8884d8"
                     paddingAngle={5}
                     dataKey="value"
