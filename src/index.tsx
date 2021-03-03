@@ -132,7 +132,7 @@ const CarparkOccupancyWidget: React.FunctionComponent<IWidgetProps> = (props) =>
                     loadError?
                     <div style={{flex:1,justifyContent:'center',alignItems:'center',display:'flex'}}>
                        {renderLoadError()}</div>:
-                     <div style={{flex:1}}>
+                    <div className="carpark_chart" style={{flex:1}}>
                          {renderPie()}
                     </div>
                
